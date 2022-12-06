@@ -6,14 +6,12 @@
 
 
 
-- Com TypeScript o/
-
-
 ## 🚀 Começando
 
 - É só dar um fork no repo e usar ♡
+- Com TypeScript o/
 
-### 📋 Pré-requisitos
+## 📋 Pré-requisitos
 
 - Instalar o Phospor-icons para o ícone
 
@@ -25,7 +23,7 @@
 yarn add phospor-icons styled-components
 ```
 
-### 🔧 Como implementar
+## 🔧 Como implementar
 
 Parâmetros
 
