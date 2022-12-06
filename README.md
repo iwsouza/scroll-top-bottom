@@ -4,7 +4,7 @@
 <img src="https://i.imgur.com/oXAndqI.gif" alt="Preview do projeto" width="40%"/>
 </div>
 
-
+<p align="center">Segue no <a href="https://instagram.com/iwsouza" target="_blank">insta</a> pra mais dicas</p>
 
 ## 🚀 Começando
 
