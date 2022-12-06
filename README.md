@@ -1,12 +1,13 @@
 # Scroll para cima e para baixo
 
 <div align="center">
-<img src="https://i.imgur.com/oXAndqI.gif" alt="Preview do projeto" width="100%"/>
+<img src="https://i.imgur.com/oXAndqI.gif" alt="Preview do projeto" width="40%"/>
 </div>
 
-```
-Com TypeScript o/
-```
+
+
+- Com TypeScript o/
+
 
 ## 🚀 Começando
 
