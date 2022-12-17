@@ -1,9 +1,9 @@
-import { CaretDown, CaretUp } from "phosphor-react";
+import { CaretDown, CaretUp } from 'phosphor-react';
 
-import * as S from "./styles";
+import * as S from './styles';
 
 export type Props = {
-  variant: "top" | "down" | "top-down";
+  variant: 'up' | 'down' | 'up-down';
   borderColor: string;
   buttonColor: string;
   iconColor?: string;
@@ -11,24 +11,24 @@ export type Props = {
 
 /**
  * Botão lateral de scroll
- * @param variant 'top' | 'down' | 'top-down'
+ * @param variant 'up' | 'down' | 'up-down'
  * @param borderColor hexadecimal
  * @param buttonColor hexadecimal
  * @param iconColor hexadecimal -> default #FFFFFF
  */
-export const ScrollTopBottom: React.FC<Props> = ({
+export const ScrollUpDown: React.FC<Props> = ({
   variant,
   borderColor,
   buttonColor,
   iconColor,
 }: Props) => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   return (
@@ -37,14 +37,13 @@ export const ScrollTopBottom: React.FC<Props> = ({
         variant={variant}
         buttonColor={buttonColor}
         iconColor={iconColor}
-        borderColor={borderColor}
-      >
-        {variant === "top" || variant === "top-down" ? (
+        borderColor={borderColor}>
+        {variant === 'up' || variant === 'up-down' ? (
           <button onClick={() => scrollToTop()}>
             <CaretUp weight="bold" />
           </button>
         ) : null}
-        {variant === "down" || variant === "top-down" ? (
+        {variant === 'down' || variant === 'up-down' ? (
           <>
             <i />
             <button onClick={() => scrollToBottom()}>

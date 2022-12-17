@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
-import { Props } from ".";
+import { Props } from '.';
 
-export const Wrapper = styled.div<{ borderColor: Props["borderColor"] }>`
+export const Wrapper = styled.div<{ borderColor: Props['borderColor'] }>`
   width: 50px;
   height: 50px;
 
@@ -17,10 +17,10 @@ export const Wrapper = styled.div<{ borderColor: Props["borderColor"] }>`
 `;
 
 export const Circle = styled.div<{
-  variant: Props["variant"];
-  buttonColor: Props["buttonColor"];
-  iconColor: Props["iconColor"];
-  borderColor: Props["borderColor"];
+  variant: Props['variant'];
+  buttonColor: Props['buttonColor'];
+  iconColor: Props['iconColor'];
+  borderColor: Props['borderColor'];
 }>`
   width: 100%;
   height: 100%;
@@ -34,7 +34,7 @@ export const Circle = styled.div<{
 
   background: ${({ buttonColor }) => buttonColor};
   ${({ variant, iconColor, borderColor }) =>
-    variant === "top" || variant === "down"
+    variant === 'up' || variant === 'down'
       ? css`
           & > i {
             display: none;
@@ -56,7 +56,7 @@ export const Circle = styled.div<{
 
             & > svg {
               font-size: 15px;
-              color: ${iconColor ? iconColor : "#FFFFFF"};
+              color: ${iconColor ? iconColor : '#FFFFFF'};
             }
 
             &:focus {
@@ -88,7 +88,7 @@ export const Circle = styled.div<{
 
             & > svg {
               font-size: 15px;
-              color: ${iconColor ? iconColor : "#FFFFFF"};
+              color: ${iconColor ? iconColor : '#FFFFFF'};
             }
 
             &:focus {
