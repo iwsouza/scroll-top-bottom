@@ -6,6 +6,8 @@
 
 <p align="center">Segue no <a href="https://instagram.com/iwsouza" target="_blank">insta</a> pra mais dicas</p>
 
+### <p align="center"> 🧪 Veja a <a href="" target="_blank">demonstração aqui</a></p>
+
 ## 🚀 Começando
 
 - É só dar um fork no repo e usar ♡
@@ -29,7 +31,7 @@ Parâmetros
 
 ```ts
   // Obrigatórios
-  variant: 'top' | 'down' | 'top-down';
+  variant: 'up' | 'down' | 'up-down';
   borderColor: hexadecimal;
   buttonColor: hexadecimal;
 
@@ -38,7 +40,7 @@ Parâmetros
 ```
 
 ```jsx
-<ScrollTopBottom variant="top-down" borderColor="#38424A" buttonColor="#297784" iconColor="#FFFFFF">
+<ScrollUpDown variant="up-down" borderColor="#38424A" buttonColor="#297784" iconColor="#FFFFFF">
 ```
 
 ## ✒️ Suporte
