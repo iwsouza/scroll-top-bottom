@@ -4,7 +4,10 @@ import { CodeFormatting } from './components/code-formatting';
 import { steps } from './mapped';
 import { GithubLogo, InstagramLogo, YoutubeLogo } from 'phosphor-react';
 import { ScrollUpDown } from './components/scroll-up-down';
+import { useState } from 'react';
+
 const App: React.FC = () => {
+  const [option, setOption] = useState('up-down');
   return (
     <>
       <GlobalStyles />
@@ -27,6 +30,39 @@ const App: React.FC = () => {
           <S.Align minorMargin minorPadding>
             <div>
               <span>O botão está fixado no canto inferior direito da tela</span>
+              <div>
+                <fieldset>
+                  <input
+                    type="radio"
+                    name="option"
+                    id="up-down"
+                    value="up-down"
+                    checked
+                    onChange={(e) => setOption(e.target.value)}
+                  />
+                  <label htmlFor="up-down">Cima e Baixo</label>
+                </fieldset>
+                <fieldset>
+                  <input
+                    type="radio"
+                    name="option"
+                    id="up"
+                    value="up"
+                    onChange={(e) => setOption(e.target.value)}
+                  />
+                  <label htmlFor="up">Somente p/ Cima</label>
+                </fieldset>
+                <fieldset>
+                  <input
+                    type="radio"
+                    name="option"
+                    id="down"
+                    value="down"
+                    onChange={(e) => setOption(e.target.value as string)}
+                  />
+                  <label htmlFor="down">Somente p/ Baixo</label>
+                </fieldset>
+              </div>
             </div>
           </S.Align>
           {steps.map((item) => {
@@ -40,7 +76,7 @@ const App: React.FC = () => {
           })}
         </S.Container>
         <ScrollUpDown
-          variant="up-down"
+          variant={option as 'up-down' | 'up' | 'down'}
           borderColor="#31383E"
           buttonColor="#386875"
         />

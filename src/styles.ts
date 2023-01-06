@@ -76,5 +76,19 @@ export const Align = styled.div<{
       font-weight: bold;
       color: #fff;
     }
+
+    & > div {
+      display: flex;
+      gap: 20px;
+      > fieldset {
+        display: flex;
+        gap: 6px;
+        border: 0;
+        box-shadow: 0 0 10px #00000040;
+        padding: 8px 12px;
+        color: #dedede;
+        border-radius: 8px;
+      }
+    }
   }
 `;
